@@ -18,10 +18,10 @@ jobs:
           npm install
           npm run build
 
-    test:
+  test:
     needs: build
     runs-on: ubuntu-latest
-    ...
+    
     steps:
     - uses: actions/checkout@v2
     - uses: actions/download-artifact@main
